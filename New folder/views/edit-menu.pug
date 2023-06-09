@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  h1 Edit Menu Link
+  form(action=`/admin/menu/edit/${link._id}`, method="POST")
+    label(for="wgt") Weight:
+    input(type="text", name="wgt", id="wgt", value=link.weight)
+    label(for="path") Path:
+    input(type="text", name="path", id="path", value=link.path)
+    label(for="text") Name:
+    input(type="text", name="text", id="text", value=link.name)
+    button(type="submit") Save
