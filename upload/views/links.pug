@@ -1,0 +1,24 @@
+extends layout
+
+block content
+  h1 Links
+  table
+    thead
+      tr
+        th Name
+        th Quantity
+        th Unit
+        th Category
+        th Actions
+    tbody
+      each link in links
+        tr
+          td= link.name
+          td= link.quantity
+          td= link.unit
+          td= link.category
+          td
+            a(href=`/edit/${link._id}`) Edit
+            a(href=`/delete/${link._id}`) Delete
+  h2 Add Link
+  a(href="/add") Add a new link

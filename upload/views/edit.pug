@@ -1,0 +1,14 @@
+extends layout
+
+block content
+  h1 Edit Link
+  form(action=`/edit/${editLink._id}`, method="post")
+    label(for="name") Name:
+    input(type="text", name="name", value=editLink.name, required)
+    label(for="quantity") Quantity:
+    input(type="text", name="quantity", value=editLink.quantity, required)
+    label(for="unit") Unit:
+    input(type="text", name="unit", value=editLink.unit, required)
+    label(for="category") Category:
+    input(type="text", name="category", value=editLink.category, required)
+    button(type="submit") Save Changes

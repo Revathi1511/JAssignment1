@@ -1,0 +1,33 @@
+
+
+.heading {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .subheading {
+    color: #777;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .link-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .link-list li {
+    margin-bottom: 5px;
+  }
+  
+  .link {
+    color: #00f;
+    text-decoration: none;
+  }
+  
+  .link:hover {
+    text-decoration: underline;
+  }
+  

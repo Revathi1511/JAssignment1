@@ -1,0 +1,12 @@
+html
+  head
+    title #{title}
+    script(src="/js/script2.js")
+  body
+    h1 Welcome to the Cooking Website
+    p Here you can find various recipes and cooking tips.
+    h2 Links
+    ul
+      each link in links
+        li
+          a(href=`/edit/${link._id}`)= link.name

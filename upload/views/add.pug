@@ -1,0 +1,14 @@
+extends layout
+
+block content
+  h1 Add Link
+  form(action="/add", method="post")
+    label(for="name") Name:
+    input(type="text", name="name", required)
+    label(for="quantity") Quantity:
+    input(type="text", name="quantity", required)
+    label(for="unit") Unit:
+    input(type="text", name="unit", required)
+    label(for="category") Category:
+    input(type="text", name="category", required)
+    button(type="submit") Add Link
